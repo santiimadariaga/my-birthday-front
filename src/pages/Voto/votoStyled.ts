@@ -87,3 +87,20 @@ export const Navigator = styled(Link)`
     transition: all 0.3s ease;
   }
 `;
+
+export const NavigatorTwo = styled(Link)`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  background-color: white;
+  padding: 10px;
+
+  &:hover {
+    background-color: grey;
+    color: white;
+    transition: all 0.3s ease;
+  }
+`;

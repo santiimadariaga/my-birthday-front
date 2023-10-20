@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { axiosDb } from "../../helpers/axios";
-import { Box, Navigator, Page, Select, SendButton, Title } from "./votoStyled";
+import { Box, Navigator, NavigatorTwo, Page, Select, SendButton, Title } from "./votoStyled";
 
 const Voto = () => {
     const [allCostumes, setAllCostumes] = useState([]);
@@ -45,6 +45,7 @@ const Voto = () => {
     return (
         <Page>
             <Navigator to={'/votos'}>VOTOS</Navigator>
+            <NavigatorTwo to={'/addCostume'}>ADMIN</NavigatorTwo>
             <Box onSubmit={handleSubmit}>
                 <Title>Mejor Disfraz</Title>
                 <Select onChange={handleSelectChange} value={selectedCostume}>
